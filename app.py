@@ -7,7 +7,7 @@ from cnn import CNN  # Assuming you have a separate file for your model definiti
 
 # Load the trained model
 model = CNN(num_classes=36, dropout_rate=0.2)
-model.load_state_dict(torch.load("C:\\Users\\rohit\\Downloads\\rohithdi_ssnehaba_assignment2_part3.h5", map_location=torch.device('cpu')))
+model.load_state_dict(torch.load("rohithdi_ssnehaba_assignment2_part3.h5", map_location=torch.device('cpu')))
 model.eval()
 
 # Include the following function for preprocessing:
