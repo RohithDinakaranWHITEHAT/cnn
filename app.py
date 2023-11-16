@@ -6,7 +6,7 @@ from torchvision import transforms
 from cnn import CNN  
 
 model = CNN(num_classes=36, dropout_rate=0.2)
-model.load_state_dict(torch.load("C:\\Users\\rohit\\Downloads\\rohithdi_ssnehaba_assignment2_part3.h5", map_location=torch.device('cpu')))
+model.load_state_dict(torch.load("rohithdi_ssnehaba_assignment2_part3.h5", map_location=torch.device('cpu')))
 model.eval()
 model_summary = """
     <div style="background-color: #f0f0f0; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
