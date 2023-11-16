@@ -5,21 +5,24 @@ import torch
 from torchvision import transforms
 from cnn import CNN  
 
-# ... (Your existing code)
 
-# Model summary with styles
 model_summary = """
     <div style="background-color: #f0f0f0; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-        <h3 style="color: #333;">CNN Model Summary</h3>
+        <h3 style="color: #333;">Model Summary</h3>
         <p style="color: #555;">
-            This CNN model consists of five convolutional layers, each followed by a ReLU activation function and a max pooling layer. 
-            The output of the convolutional layers is then flattened and passed through three fully connected layers, each followed by a ReLU activation function. 
+            <strong>CNN Architecture:</strong><br>
+            This CNN model consists of five convolutional layers, each followed by a ReLU activation function and a max pooling layer.
+            The output of the convolutional layers is then flattened and passed through three fully connected layers, each followed by a ReLU activation function.
             The final fully connected layer has a number of outputs equal to the number of classes in the dataset.
+        </p>
+        <p style="color: #555;">
+            <strong>Training Process:</strong><br>
+            The model was trained using early stopping for 400 epochs with a batch size of 16 and an Adagrad optimizer with a learning rate of 0.001.
+            The model achieved an accuracy of 89.12% on the test set.
         </p>
     </div>
 """
 
-# ... (Your existing code)
 
 def main():
     st.title("Image Classifier")
